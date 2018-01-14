@@ -857,6 +857,8 @@ class Vtiger_Field_Model extends Vtiger_Field {
 			'lessthanhourslater' => 'LBL_LESS_THAN_HOURS_LATER',
 			'morethanhoursbefore' => 'LBL_MORE_THAN_HOURS_BEFORE',
 			'morethanhourslater' => 'LBL_MORE_THAN_HOURS_LATER',
+			'untilyesterday' => 'LBL_UNTIL_YESTERDAY',
+			'last60min' => 'LBL_LAST_60_MIN'
 		);
 	}
 
@@ -872,8 +874,8 @@ class Vtiger_Field_Model extends Vtiger_Field {
 			'T' => array('e','n','l','g','m','h','bw','b','a','y','ny'),
 			'I' => array('e','n','l','g','m','h','y','ny'),
 			'C' => array('e','n','y','ny'),
-			'D' => array('e','n','bw','b','a','y','ny'),
-			'DT' => array('e','n','bw','b','a','y','ny','lessthanhoursbefore','lessthanhourslater','morethanhoursbefore','morethanhourslater'),
+			'D' => array('e','n','bw','b','a','y','ny','untilyesterday'),
+			'DT' => array('e','n','bw','b','a','y','ny','untilyesterday','last60min','lessthanhoursbefore','lessthanhourslater','morethanhoursbefore','morethanhourslater'),
 			'NN' => array('e','n','l','g','m','h','y','ny'),
 			'E' => array('e','n','s','ew','c','k','y','ny')
 		);
