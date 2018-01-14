@@ -915,6 +915,8 @@ $languageStrings = array(
 	'LBL_LESS_THAN_HOURS_LATER' => 'Less than hours later',
 	'LBL_MORE_THAN_HOURS_BEFORE' => 'More than hours before',
 	'LBL_MORE_THAN_HOURS_LATER' => 'More than Hours Later',
+	'LBL_UNTIL_YESTERDAY' => 'Until yesterday',
+	'LBL_LAST_60_MIN'=>'Last 60min',
 	'LBL_INTERNAL_COMMENT' => 'Internal Comment',
 	'LBL_NOTE_EXISTING_ATTACHMENTS_WILL_BE_REPLACED' => 'Note : Existing attachments(images/files) will be replaced',
 

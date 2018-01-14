@@ -1114,7 +1114,7 @@ class Vtiger_Functions {
 	 * @return <array> array of special date conditions
 	 */
 	static function getSpecialDateConditions() {
-		return array('lessthandaysago', 'morethandaysago', 'inlessthan', 'inmorethan', 'daysago', 'dayslater');
+		return array('lessthandaysago','untilyesterday', 'morethandaysago', 'inlessthan', 'inmorethan', 'daysago', 'dayslater');
 	}
 
 	/**
@@ -1122,7 +1122,7 @@ class Vtiger_Functions {
 	 * @return <array> array of special time conditions
 	 */
 	static function getSpecialTimeConditions() {
-		return array('lessthanhoursbefore', 'lessthanhourslater', 'morethanhoursbefore', 'morethanhourslater');
+		return array('lessthanhoursbefore','last60min', 'lessthanhourslater', 'morethanhoursbefore', 'morethanhourslater');
 	}
 
 	/**

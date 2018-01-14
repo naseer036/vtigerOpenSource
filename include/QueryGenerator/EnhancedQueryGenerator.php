@@ -912,6 +912,10 @@ class EnhancedQueryGenerator extends QueryGenerator {
 				$olderDate = date('Y-m-d', strtotime('-'.$days.' days'));
 				return array('comparator' => 'l', 'date' => $olderDate);
 
+			case 'untilyesterday':
+				$today = date('Y-m-d');
+				return array('comparator' => 'l', 'date' => $today);
+				
 			case 'inlessthan' : $days = $value;
 				$today = date('Y-m-d');
 				$futureDate = date('Y-m-d', strtotime('+'.$days.' days'));
@@ -939,8 +943,10 @@ class EnhancedQueryGenerator extends QueryGenerator {
 
 				return array('comparator' => 'e', 'date' => $futureDate);
 
+			case 'last60min':
+				$olderDateTime = date('Y-m-d H:i:s', strtotime('-1 hours'));
 			case 'lessthanhoursbefore' : $currentTime = date('Y-m-d H:i:s');
-				$olderDateTime = date('Y-m-d H:i:s', strtotime('-'.$value.' hours'));
+				$olderDateTime = ($olderDateTime) ? $olderDateTime : date('Y-m-d H:i:s', strtotime('-'.$value.' hours'));
 				if ($queryGenerator) {
 					// convert to user format
 					$currentDateTimeInstance = new DateTimeField($currentTime);
